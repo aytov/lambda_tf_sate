@@ -16,7 +16,9 @@ specific output from the terraform state file.
 ## Steps
 1. Crate an S3 bucket with correct policy permissions for storing the terraform state. 
 An example guide here: https://developer.hashicorp.com/terraform/language/settings/backends/s3
+
 2. Go to `terraform/main.tf` and set the S3 bucket name from step 1.
+
 3. Build the jar archive and provision the AWS env by running:
 ```
 $ ./build_and_deploy.sh
