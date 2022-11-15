@@ -1,0 +1,18 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: com.aytov.lambda.LambdaTerraformStateHandler
+      CodeUri: Function
+      Runtime: java11
+      Architectures:
+      - x86_64
+      Environment:
+        Variables:
+          STATE_BUCKET_NAME: aytovcom-tfstate
+          STATE_FILE_NAME: terraform.tfstate
+          REGION: eu-central-1
+    Metadata:
+      SamResourceId: Function

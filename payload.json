@@ -1,0 +1,3 @@
+{
+  "exp": "$.resources[?(@.type == \"aws_lb\")].instances[*].attributes.dns_name"
+}

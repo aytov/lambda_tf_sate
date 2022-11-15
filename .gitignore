@@ -1,0 +1,8 @@
+terraform.tfvars
+**/.terraform
+*.tfstate*
+*.out
+
+*.iml
+.idea
+**/target
