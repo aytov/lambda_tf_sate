@@ -2,3 +2,7 @@
 .terraform
 .terraform.lock.hcl
 *.zip
+terraform.tfvars
+**/.terraform
+*.tfstate*
+*.out
