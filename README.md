@@ -20,11 +20,13 @@ An example guide here: https://developer.hashicorp.com/terraform/language/settin
 2. Go to `terraform/main.tf` and set the S3 bucket name from step 1.
 
 3. Build the jar archive and provision the AWS env by running:
-```
-$ ./build_and_deploy.sh
-```
+   ```
+   $ ./build_and_deploy.sh
+   ```
 4. This is the example call on how to get the `dns_name` for an AWS LoadBalancer.
-
+   ```
+   $ ./test.sh
+   ```
     Payload:
     ```json
     {
@@ -39,7 +41,7 @@ $ ./build_and_deploy.sh
     ```
     "[\"internal-lambda-terraform-state-dev-lb-1538278302.eu-central-1.elb.amazonaws.com\"]"
     ```
-5. Clean up
-```
-$ ./destroy.sh
-```
+6. Clean up
+   ```
+   $ ./destroy.sh
+   ```

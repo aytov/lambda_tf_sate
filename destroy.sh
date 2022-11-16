@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+printf 'Running terraform destroy ..\n\n'
 cd terraform
-terraform destroy -force
+terraform destroy
 rm plan.out
